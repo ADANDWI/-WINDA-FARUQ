@@ -77,7 +77,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/BS\ \(330\ of\ 508\).jpg);
+  background-image: url(
+    img/BS\ \(330\ of\ 508\).jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -296,7 +297,7 @@ body {
 .story{
   padding-top: 10rem;
   padding-bottom: 8rem;
-  background-image: url(/img/WhatsApp\ Image\ 2024-02-07\ at\ 14.26.57.jpeg);
+  background-image: url(img/WhatsApp\ Image\ 2024-02-07\ at\ 14.26.57.jpeg);
   background-size: cover;
   background-position: center;
   z-index: 1;
