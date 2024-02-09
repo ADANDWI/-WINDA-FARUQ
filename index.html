@@ -499,6 +499,16 @@
     <i color="#fff" class="fa fa-volume-up my-float"></i>
   </a>
   <script>
+  $('#konten').hide(); //hided konten scr deafult
+    $(".thebegining").click(function(){
+        $(this).hide(); //hide the begining
+        $('#konten').show()  //show konten
+        $("#audio").get(0).play(); //play musik
+        document.documentElement.requestFullscreen();  //fullscreen
+    
+    });
+  </script>
+  <script>
 		document.addEventListener("DOMContentLoaded", function (event) {
 			let audio = document.getElementById("audio");
 			let button = document.getElementById('mute');
