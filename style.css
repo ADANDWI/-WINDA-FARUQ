@@ -798,3 +798,39 @@ footer li {
 .card1 .simply-countdown {
   text-align: right; /* Ini akan membuat angka countdown berjejer rapi ke kanan */
 }
+/* MUTE BUTTON */
+
+.floatmute {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	top: 25px;
+	right: 25px;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	z-index: 100;
+}
+
+.my-float {
+	margin-top: 10px;
+}
+
+/* END MUTE BUTTON */
+
+/* GIFT BUTTON */
+.floatgift {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	top: 25px;
+	left: 25px;
+	color: #FFF;
+	/* border-radius:50px; */
+	text-align: center;
+	/* background:rgba(0, 0, 0, 0.5); */
+	/* font-size:20px; */
+	z-index: 100;
+}
