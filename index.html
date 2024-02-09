@@ -37,6 +37,7 @@
     </main>
 
   </section>
+  <audio loop="true" src="audio/Tiara Andini, Arsy Widianto - Cintanya Aku (Official Music Video)(2)(1).mp3" id="audio"></audio>
 
 
 
@@ -83,6 +84,7 @@
     <!-- <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a> -->
   </main>
   </section>
+
   <script>
   document.addEventListener('DOMContentLoaded', function() {
     let snowflakes = document.getElementById('snowflakes');
@@ -492,37 +494,40 @@
       </div>
     </div>
   </footer>
-
-  <div id="audio-container">
-    <audio id="song" autoplay>
-      <source src="audio/Tiara Andini, Arsy Widianto - Cintanya Aku (Official Music Video)(2)(1).mp3" type="audio/mp3">
-    </audio>
-
-    <div class="audio-icon-wrapper" style="display: none;">
-      <i class="bi bi-disc"></i>
-    </div>
   </div>
   <script>
-    // Ambil elemen audio
-    const song = document.getElementById('song');
-    
-    // Setel volume lagu sebelum memulai pemutaran
-    song.volume = 15; // Anda dapat menyesuaikan nilai ini sesuai keinginan, misalnya 0.5 untuk setengah volume
-    
-    // Ambil elemen tombol "Buka Undangan"
-    const bukaUndanganButton = document.getElementById('bukaUndangan');
-    
-    // Tambahkan event listener untuk menangkap klik pada tombol
-    bukaUndanganButton.addEventListener('click', function() {
-        // Mulai pemutaran audio
-        playAudio();
-    });
-    
-    // Fungsi untuk memulai pemutaran audio
-    function playAudio() {
-        song.play();
-    }
-</script>
+		document.addEventListener("DOMContentLoaded", function (event) {
+			let audio = document.getElementById("audio");
+			let button = document.getElementById('mute');
+			if (+localStorage.getItem('mute')) {
+				audio.muted = true;
+				button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
+				audio.pause()
+			} else {
+				audio.volume = 0.9;
+				audio.play()
+			}
+		})
+
+		function mute() {
+			let audio = document.getElementById('audio');
+			let button = document.getElementById('mute');
+			let isMute = +localStorage.getItem('mute');
+			if (!isMute) {
+				audio.muted = true;
+				audio.pause()
+				button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
+				localStorage.setItem('mute', 1);
+			} else {
+				audio.muted = false;
+				audio.volume = 0.9;
+				audio.play()
+				button.innerHTML = '<i color="#fff" class="fa fa-volume-up my-float"></i>';
+				localStorage.setItem('mute', 0);
+
+			}
+		}
+	</script>
 
 
 
@@ -563,52 +568,6 @@
     });
 
   </script>
-
-  <script>
-    const rootElement = document.querySelector(":root");
-    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    const audioIcon = document.querySelector('.audio-icon-wrapper i');
-    const song = document.querySelector('#song');
-    let isPlaying = false;
-
-    function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
-      }
-
-      rootElement.style.scrollBehavior = 'auto';
-    }
-
-    function enableScroll() {
-      window.onscroll = function () { }
-      rootElement.style.scrollBehavior = 'smooth';
-      // localStorage.setItem('opened', 'true');
-      playAudio();
-    }
-
-    function playAudio() {
-      song.volume = 0.1;
-      audioIconWrapper.style.display = 'flex';
-      song.play();
-      isPlaying = true;
-    }
-
-    audioIconWrapper.onclick = function () {
-      if (isPlaying) {
-        song.pause();
-        audioIcon.classList.remove('bi-disc');
-        audioIcon.classList.add('bi-pause-circle');
-      } else {
-        song.play();
-        audioIcon.classList.add('bi-disc');
-        audioIcon.classList.remove('bi-pause-circle');
-      }
-
-      isPlaying = !isPlaying;
-    }
 
     // if (!localStorage.getItem('opened')) {
     //   disableScroll();
