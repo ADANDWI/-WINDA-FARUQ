@@ -690,7 +690,7 @@ footer li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100%;
+  margin-top: 75%;
   border-top: 2px solid #e2156a;
   border-bottom: 2px solid #e2156a;
   padding: 50px; /* Tambahkan padding di sini */
