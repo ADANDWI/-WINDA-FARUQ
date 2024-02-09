@@ -158,15 +158,11 @@ body {
   text-transform: uppercase;
 }
 .home{
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   background-image: url(/img);
 }
 .home1 {
-  background-image: 
-  
-  
-  
-  url(img/bg.png);
+  background-image:url(img/bg.png);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -588,16 +584,6 @@ footer li {
     height: 140px;
   }
 }
-
-@media (max-width: 768px) {
-  .simply-countdown {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    justify-content: end;
-  }
-}
-
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
@@ -620,7 +606,7 @@ footer li {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
-}
+
 .card-video {
   position: relative;
   overflow: hidden;
@@ -697,17 +683,17 @@ footer li {
   border-top: 2px solid #e2156a;
   border-bottom: 2px solid #e2156a;
   padding: 50px; /* Tambahkan padding di sini */
+  background-image: url(img/BS\ \(273\ of\ 318\).jpg);
 }
 .card1 {
   width: 100%;
   border-radius: 5px;
   padding: 20px;
-  margin: 20px auto 40px; /* Menambahkan margin-top dan margin-bottom */
-  background-image: url(img/BS (274 of 318).jpg);
+  margin: 0 auto;
+  background-image: url(img/WhatsApp\ Image\ 2024-02-07\ at\ 14.39.44.jpeg);
   background-size: contain;
   background-position: center;
 }
-
 .card1 img {
   width: 100%;
   border-radius: 5px;
