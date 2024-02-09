@@ -823,3 +823,7 @@ footer li {
 	/* font-size:20px; */
 	z-index: 100;
 }
+.btn {
+  font-size: 1.8rem; /* Ukuran font tombol */
+  padding: 20px 40px; /* Padding tombol (atas bawah) (kiri kanan) */
+}
