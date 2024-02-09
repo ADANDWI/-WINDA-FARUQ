@@ -697,12 +697,11 @@ footer li {
 }
 .card1 {
   width: 100%;
-  /* border: 1px solid #ccc; */
   border-radius: 5px;
   padding: 20px;
   margin: 25px;
   background-image: url(img/WhatsApp\ Image\ 2024-02-07\ at\ 14.39.44.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 .card1 img {
@@ -716,10 +715,11 @@ footer li {
 }
 .card1 h2{
   margin-top: 10%;
-  font-size: 26px; /* Ubah ukuran teks sesuai kebutuhan Anda */
-  font-family: 'playful', cursive; /* Ganti dengan jenis font playful yang Anda inginkan */
+  font-size: 26px;
+  font-family: 'playful', cursive;
   margin-bottom: 10px;
 }
+
 .story h3{
   color: #333;
   font-size: 30px; /* Ubah ukuran teks sesuai kebutuhan Anda */
@@ -789,4 +789,9 @@ footer li {
 
 .card-box button:hover {
   background-color: rgb(166, 41, 122); /* Sesuaikan dengan warna yang Anda inginkan */
+}
+@media (max-width: 768px) {
+  .couple .col-lg-6 {
+    margin-bottom: 20px; /* Tambahkan jarak antara kolom-kolom */
+  }
 }
