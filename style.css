@@ -514,6 +514,22 @@ footer li {
     transform: translateX(-50%) translateY(45px);
   }
 }
+/* Untuk mengatur ukuran countdown menjadi lebih kecil */
+@media (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    width: 20px; /* Atur lebar countdown */
+    height: 20px; /* Atur tinggi countdown */
+    padding: 30px; /* Sesuaikan jarak antara countdown dengan batas card */
+  }
+}
+
+/* Untuk menggeser countdown ke sebelah kiri agar berada di tengah card saat responsif */
+@media (max-width: 768px) {
+  .simply-countdown {
+    display: flex;
+    justify-content: flex-start; /* Menggeser ke sebelah kiri */
+  }
+}
 
 /* laptop */
 @media (max-width: 992px) {
@@ -685,7 +701,6 @@ footer li {
   padding: 50px; /* Tambahkan padding di sini */
   background-image: url(img/BS\ \(273\ of\ 318\).jpg);
   background-size: cover;
-  background-position: center;
 }
 .card1 {
   width: 100%;
@@ -824,6 +839,8 @@ footer li {
 	z-index: 100;
 }
 .btn {
-  font-size: 1.8rem; /* Ukuran font tombol */
+  font-size: 2.5rem; /* Ukuran font tombol */
   padding: 20px 40px; /* Padding tombol (atas bawah) (kiri kanan) */
+  width: auto;
+  height: auto;
 }
