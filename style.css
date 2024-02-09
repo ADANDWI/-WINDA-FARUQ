@@ -589,11 +589,14 @@ footer li {
   }
 }
 
-/* mobile phone */
-@media (max-width: 500px) {
-  html {
-    font-size: 60%;
+@media (max-width: 768px) {
+  .simply-countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: end;
   }
+}
 
   .simply-countdown > .simply-section {
     padding: 45px;
@@ -699,11 +702,12 @@ footer li {
   width: 100%;
   border-radius: 5px;
   padding: 20px;
-  margin: 0 auto;
-  background-image: url(img/WhatsApp\ Image\ 2024-02-07\ at\ 14.39.44.jpeg);
+  margin: 20px auto 40px; /* Menambahkan margin-top dan margin-bottom */
+  background-image: url(img/BS (274 of 318).jpg);
   background-size: contain;
   background-position: center;
 }
+
 .card1 img {
   width: 100%;
   border-radius: 5px;

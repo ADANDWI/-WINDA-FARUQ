@@ -497,14 +497,16 @@
   <a id="mute" href="#/" onclick="mute()" class="floatmute">
     <i color="#fff" class="fa fa-volume-up my-float"></i>
   </a>
-  <!-- <script>
+  <script>
   $('#konten').hide(); //hided konten scr deafult
     $(".thebegining").click(function(){
+        $(this).hide(); //hide the begining
+        $('#konten').show()  //show konten
         $("#audio").get(0).play(); //play musik
         document.documentElement.requestFullscreen();  //fullscreen
     
     });
-  </script> -->
+  </script>
   <script>
 		document.addEventListener("DOMContentLoaded", function (event) {
 			let audio = document.getElementById("audio");
