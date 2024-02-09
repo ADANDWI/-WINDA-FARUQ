@@ -684,6 +684,8 @@ footer li {
   border-bottom: 2px solid #e2156a;
   padding: 50px; /* Tambahkan padding di sini */
   background-image: url(img/BS\ \(273\ of\ 318\).jpg);
+  background-size: cover;
+  background-position: center;
 }
 .card1 {
   width: 100%;
@@ -784,9 +786,6 @@ footer li {
   .couple .col-lg-6 {
     margin-bottom: 20px; /* Tambahkan jarak antara kolom-kolom */
   }
-}
-.card1 .simply-countdown {
-  text-align: right; /* Ini akan membuat angka countdown berjejer rapi ke kanan */
 }
 /* MUTE BUTTON */
 
