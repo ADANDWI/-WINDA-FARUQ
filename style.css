@@ -795,3 +795,6 @@ footer li {
     margin-bottom: 20px; /* Tambahkan jarak antara kolom-kolom */
   }
 }
+.card1 .simply-countdown {
+  text-align: right; /* Ini akan membuat angka countdown berjejer rapi ke kanan */
+}
